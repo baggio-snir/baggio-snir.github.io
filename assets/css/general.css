@@ -56,3 +56,10 @@ abbr {
   font-weight: bold;
 }
 
+footer {
+  font-style: italic;
+  font-style: small;
+  margin: auto;
+  width: 100%;
+  text-align: right;
+}
