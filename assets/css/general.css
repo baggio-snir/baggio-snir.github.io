@@ -10,6 +10,10 @@ html, body {
   font-family: Verdana;
 }
 
+body {
+  max-width: 760px;
+}
+
 h1 {
   width: 100%;
   margin-top: 50px;
@@ -45,5 +49,10 @@ article:hover {
 
 *[title] {
   cursor: help;
+}
+
+abbr {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
