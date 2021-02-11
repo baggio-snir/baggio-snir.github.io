@@ -1,5 +1,5 @@
 * {
-  transition: border-left-style 5s;
+  
 }
 
 html, body {
@@ -33,10 +33,14 @@ article {
   margin-bottom: 15px;
   border: none;
   border-left: 5px hidden #868686;
+  padding-left: 10px;
 }
 
 article:hover {
+  transition: border-left-style 5s;
+  transition: padding-left 5s;
   border-left-style: solid;
+  padding-left: 5px;
 }
 
 *[title] {
