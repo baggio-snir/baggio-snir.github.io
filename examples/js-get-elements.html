@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Test sélection getElement(s)</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1 class="bleu">Titre principal</h1>
+        <p id="p1">Un paragraphe</p>
+        <div>
+            <p>Un paragraphe dans le div</p>
+            <p class="bleu">Un autre paragraphe dans le div</p>
+        </div>
+        <p>
+            Un autre paragraphe
+        </p>
+        <script type="text/javascript">
+            let elH1 = document.getElementsByTagName('h1')[0];
+            console.log(elH1);
+            let elBlues = document.getElementsByClassName('bleu');
+            console.log(elBlues);
+            let elP1 = document.getElementById('p1');
+            console.log(elP1);
+        </script>
+    </body>
+</html>
