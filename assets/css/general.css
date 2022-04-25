@@ -63,3 +63,9 @@ footer {
   width: 100%;
   text-align: right;
 }
+
+menu li {
+  list-style-type: none;
+  display: inline;
+  padding: 8px;
+}
