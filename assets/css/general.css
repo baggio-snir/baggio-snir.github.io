@@ -71,3 +71,20 @@ footer {
 figure, figure img {
   max-width: 100%;
 }
+
+figure {
+  border: 2px dashed rgba(225, 225, 225, 0.5);
+  box-shadow: 6px 6px 3px 3px rgba(225, 225, 225, 0.8);
+  transition: visibility 10s 1s;
+}
+
+figure img {
+  padding: 5px;
+}
+
+figure figcaption {
+  background-color: rgba(225, 225, 225, 0.8);
+  text-align: right;
+  font-size: small;
+  font-style: italic;
+}

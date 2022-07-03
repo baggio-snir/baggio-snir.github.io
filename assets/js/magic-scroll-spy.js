@@ -14,7 +14,7 @@ let options = {
     threshold: 1.0
 }
 
-let observer = new IntersectionObserver((r) => {
+let sectionsObserver = new IntersectionObserver((r) => {
     const currentTarget = r[0].target.id;
     let linkedAside = document.querySelector('#'+sections[currentTarget]);
     if(linkedAside) {
@@ -35,5 +35,9 @@ let observer = new IntersectionObserver((r) => {
     }
 }, options);
 for(const x in sections) {
-    observer.observe(document.querySelector('#'+x));
+    sectionsObserver.observe(document.querySelector('#'+x));
 }
+
+let scrollSpyContentEl = document.getElementById('main-menu');
+let scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl);
+console.log(scrollSpy);
