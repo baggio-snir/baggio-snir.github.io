@@ -11,10 +11,10 @@ let sections = {
 let options = {
     root: document.querySelector(null),
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.1
 }
 
-let sectionsObserver = new IntersectionObserver((r) => {
+const displayOrNot = function(r) {
     const currentTarget = r[0].target.id;
     let linkedAside = document.querySelector('#'+sections[currentTarget]);
     if(linkedAside) {
@@ -33,9 +33,12 @@ let sectionsObserver = new IntersectionObserver((r) => {
     } else {
         console.error('Unable to find #'+sections[currentTarget]+' : no linked aside content will be shown');
     }
-}, options);
+}
+
+let sectionsObserver = new IntersectionObserver(displayOrNot, options);
 for(const x in sections) {
     sectionsObserver.observe(document.querySelector('#'+x));
+    //displayOrNot(x);
 }
 
 let scrollSpyContentEl = document.getElementById('main-menu');

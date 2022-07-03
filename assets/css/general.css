@@ -51,6 +51,16 @@ main section article p {
     top: 15px;
 }
 
+#smart-aside {
+  font-size: small;
+}
+
+#smart-aside h2 {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
 *[title] {
   cursor: help;
 }
@@ -75,11 +85,17 @@ figure, figure img {
 figure {
   border: 2px dashed rgba(225, 225, 225, 0.5);
   box-shadow: 6px 6px 3px 3px rgba(225, 225, 225, 0.8);
-  transition: visibility 10s 1s;
+  transition: opacity 2s;
+  opacity: 0.6;
 }
 
 figure img {
   padding: 5px;
+  
+}
+
+figure:hover {
+  opacity: 1.0;
 }
 
 figure figcaption {
