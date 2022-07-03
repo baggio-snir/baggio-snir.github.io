@@ -21,10 +21,6 @@ h1 {
 main {
     font-size: large;
     text-align: justify;
-    max-height: available;
-    box-shadow: 10px 10px 20px 20px var(--bs-light) inset;
-    max-height: 500; // @TODO
-    overflow: auto;
 }
 
 main section header {
@@ -50,7 +46,7 @@ main section article p {
     padding-bottom: 8px;
 }
 
-#smart-aside {
+#smart-aside, #main-menu {
     position: sticky;
 }
 
