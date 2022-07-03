@@ -48,6 +48,7 @@ main section article p {
 
 #smart-aside, #main-menu {
     position: sticky;
+    top: 15px;
 }
 
 *[title] {
