@@ -67,3 +67,7 @@ footer {
   width: 100%;
   text-align: right;
 }
+
+figure, figure img {
+  max-width: 100%;
+}
